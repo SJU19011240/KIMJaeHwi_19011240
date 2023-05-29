@@ -1,7 +1,5 @@
 function rotation_matrix=PQW2ECI(arg_prg,inc_angle,RAAN)
-%{
-Week #11 HW
-%}
+% Week #11 HW
 
 R_RAAN=[cos(RAAN) sin(RAAN) 0; -sin(RAAN) cos(RAAN) 0; 0 0 1];
 R_inc=[1 0 0; 0 cos(inc_angle) sin(inc_angle); 0 -sin(inc_angle) cos(inc_angle)];
