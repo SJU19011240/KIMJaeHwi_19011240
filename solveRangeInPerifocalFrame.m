@@ -5,5 +5,5 @@ ecc=eccentricity;
 ta=rad2deg(true_anomaly);
 ecc_anomaly=acos((ecc+cos(ta)/(1+ecc*cos(ta))));
 r=sma*(1-ecc*cos(ecc_anomaly));
-rangeInPQW=[sma*ecc+r*cos(ta) r*sin(ta) 0]';
+rangeInPQW=[r*cos(ta) r*sin(ta) 0]';
 end
